@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="fonts/lineo-icon/style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="style.css">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-image: url("bgg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+h2 {
+  color: #333;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  background-color: lightblue;
+  color: #595959;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.form-container {
+  display: none;
+  text-align: center;
+}
+
+.form-container.show {
+  display: block;
+}
+
+.form-container form {
+  display: inline-block;
+  text-align: left;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.form-container {
+  text-align: center;
+}
+
+.form-container form {
+  display: inline-block;
+  text-align: left;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-header">
+      <div class="container">
+        <a href="index.html" id="branding">
+          <img src="images/logo.png" alt="Company Name" class="logo">
+          <div class="logo-text">
+            <h1 class="site-title">SDM INSURANCE COMPANY</h1>
+            <small class="description">ITS YOUR COMPANY</small>
+          </div>
+        </a> <!-- #branding -->
+      
+        <div class="right-section pull-right">
+          <a href="#" class="phone"><img src="images/icon-phone.png" class="icon">+91-9482058979</a>
+      
+          <form action="#" class="search-form">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><img src="images/icon-search.png" alt=""></button>
+          </form>
+        </div>
+      </div> <!-- .container -->
+    </div> <!-- .top-header -->
+
+    
+    <div class="bottom-header">
+      <div class="container">
+        <div class="main-navigation">
+          <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+          <ul class="menu">
+            <li class="menu-item"><a href="about.html">About us</a></li>
+            <li class="menu-item"><a href="insurance.html">Insurance plans</a></li>
+            <li class="menu-item"><a href="resource.html">Resources</a></li>
+            <li class="menu-item "><a href="contact.html">Contact</a></li>
+            
+            <li class="menu-item"><a href="signup.html">Sign Up</a></li>
+            <li class="menu-item"><a href="loginpage.html">login</a></li>
+          </ul> <!-- .menu -->
+        </div> <!-- .main-navigation -->
+        
+        <div class="social-links">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+          <a href="#"><i class="fa fa-pinterest"></i></a>
+        </div>
+        
+        <div class="mobile-navigation"></div>
+      </div>
+    </div>
+    
+  </header> <!-- .site-header -->
+<div class="container">
+
+  
+  <a href="#" class="button" onclick="showForm()">Choose Policy</a>
+  
+  <div class="form-container" id="policy-form">
+    <form onsubmit="storeData(event)">
+      <label for="policy-type">Policy Type</label>
+      <select id="policy-type" name="policy-type">
+        <option value="" disabled selected>Select Policy Type</option>
+        <option value="General Insurance">General Insurance</option>
+        <option value="Health Insurance">Health Insurance</option>
+        <option value="Motor Insurance">Motor Insurance</option>
+        <option value="Education Insurance">Education Insurance</option>
+        <option value="Property Insurance">Property Insurance</option>
+        <option value="Life Insurance">Life Insurance</option>
+      </select>
+
+      <label for="policy-name">Policy Name</label>
+      <select id="policy-name" name="policy-name">
+        <option value="" disabled selected>Select Policy Name</option>
+        <option value="Dhan Varsha Yojana">Dhan Varsha Yojana</option>
+        <option value="Acko General">Acko General</option>
+        <option value="Sarala Jeevan">Sarala Jeevan</option>
+        <option value="Pradhan mantri Jeevan Jyothi">Pradhan mantri Jeevan Jyothi</option>
+        <option value="United India">United India</option>
+        <option value="New India Insurance">New India Insurance</option>
+        <option value="Kshema Yojana">Kshema Yojana</option>
+      </select>
+
+      <label for="sum-assured">Sum Assured</label>
+      <input type="text" id="sum-assured" name="sum-assured">
+
+      <label for="premium-amount">Premium Amount</label>
+      <input type="text" id="premium-amount" name="premium-amount">
+
+      <label for="policy-tenure">Policy Tenure</label>
+      <input type="text" id="policy-tenure" name="policy-tenure">
+
+      <label for="paying-terms">Paying Terms</label>
+      <input type="text" id="paying-terms" name="paying-terms">
+
+      <button type="submit" class="button">Submit</button>
+    </form>
+  </div>
+</div>
+<div class="site-footer">
+  <div class="widget-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="widget">
+            <h3 class="widget-title">Contact</h3>
+            <address>
+              <p>SDM Insurance COMPANY,UJIRE</p>
+            </address>
+            <a href="#">Phone: +91-9482058979</a>
+            <a href="mailto:info@company.com">ranjanshetty360.com</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="widget">
+            <h3 class="widget-title">Company</h3>
+            <ul class="no-bullet">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Infoline</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Join us</a></li>
+              <li><a href="#">Cooperation</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="widget">
+            <h3 class="widget-title">Products</h3>
+            <ul class="no-bullet">
+              <li><a href="#">Life insurance</a></li>
+              <li><a href="#">Home insurance</a></li>
+              <li><a href="#">Car insurance</a></li>
+              <li><a href="#">Business insurance</a></li>
+              <li><a href="#">Investment insurance</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="widget">
+            <h3 class="widget-title">Our Solutions</h3>
+            <ul class="no-bullet">
+              <li><a href="#">Presentation</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Examples</a></li>
+              <li><a href="#">Our experts</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="widget">
+            <h3 class="widget-title">Press Room</h3>
+            <ul class="no-bullet">
+            <li><a href="#">Advertisement</a></li>
+            <li><a href="#">Interviews</a></li>
+            <li><a href="#">Hot news</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Marketing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="widget">
+            <h3 class="widget-title">Resources</h3>
+            <ul class="no-bullet">
+              <li><a href="resource.html">Financial Protection</a></li>
+										<li><a href="resource.html">Risk Mitigation</a></li>
+										<li><a href="resource.html">Legal Requirements</a></li>
+										<li><a href="resource.html">Peace of Mind</a></li>
+										<li><a href="resource.html">Asset Protection</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-footer">
+    <div class="container">
+      <nav class="footer-navigation">
+        <a href="index.html">Home</a>
+							<a href="about.html">About us</a>
+							<a href="insurance.html">Insurance plans</a>
+							<a href="resource.html">Resources</a>
+							<a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="colophon">Copyright 2024 SDM Insurance COMPANY. Designed by Ranjan Shetty. All rights reserved.</div>
+    </div>
+  </div>
+</div>
+<script>
+function showForm() {
+  var form = document.getElementById("policy-form");
+  form.classList.toggle("show");
+}
+
+function storeData(event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Get form values
+  var policyType = document.getElementById("policy-type").value;
+  var policyName = document.getElementById("policy-name").value;
+  var sumAssured = document.getElementById("sum-assured").value;
+  var premiumAmount = document.getElementById("premium-amount").value;
+  var policyTenure = document.getElementById("policy-tenure").value;
+  var payingTerms = document.getElementById("paying-terms").value;
+
+  // Create an object to store the data
+  var policyData = {
+    "policy-type": policyType,
+    "policy-name": policyName,
+    "sum-assured": sumAssured,
+    "premium-amount": premiumAmount,
+    "policy-tenure": policyTenure,
+    "paying-terms": payingTerms
+  };
+
+  // Store the data in local storage
+  localStorage.setItem("policyData", JSON.stringify(policyData));
+
+  // Redirect to the acknowledgment page
+  window.location.href = "insurancePolicyfinal.html";
+}
+</script>
+
+</body>
+</html>
+

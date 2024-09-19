@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="fonts/lineo-icon/style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="style.css">
+<style>  
+.centre{
+position: absolute;
+top: 8px;
+left: 100px;
+font-size: 45px;
+}
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}</style>
+<style>
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px 1px;
+  cursor: pointer;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("bgg.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 50vh; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-header">
+      <div class="container">
+        <a href="index.html" id="branding">
+          <img src="images/logo.png" alt="Company Name" class="logo">
+          <div class="logo-text">
+            <h1 class="site-title">SDM INSURANCE COMPANY</h1>
+            <small class="description">ITS YOUR COMPANY</small>
+          </div>
+        </a> <!-- #branding -->
+      
+        <div class="right-section pull-right">
+          <a href="#" class="phone"><img src="images/icon-phone.png" class="icon">+91-9482058979</a>
+      
+          <form action="#" class="search-form">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><img src="images/icon-search.png" alt=""></button>
+          </form>
+        </div>
+      </div> <!-- .container -->
+    </div> <!-- .top-header -->
+
+    
+    <div class="bottom-header">
+      <div class="container">
+        <div class="main-navigation">
+          <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+          <ul class="menu">
+            <li class="menu-item"><a href="about.html">About us</a></li>
+            <li class="menu-item"><a href="insurance.html">Insurance plans</a></li>
+            <li class="menu-item"><a href="resource.html">Resources</a></li>
+            <li class="menu-item "><a href="contact.html">Contact</a></li>
+            
+            <li class="menu-item"><a href="signup.html">Sign Up</a></li>
+            <li class="menu-item"><a href="loginpage.html">login</a></li>
+          </ul> <!-- .menu -->
+        </div> <!-- .main-navigation -->
+        
+        <div class="social-links">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+          <a href="#"><i class="fa fa-pinterest"></i></a>
+        </div>
+        
+        <div class="mobile-navigation"></div>
+      </div>
+    </div>
+    
+  </header> <!-- .site-header -->
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <div class="w3-container w3-blue">
+    <h2>Login page</h2>
+  </div>
+  
+  <form class="w3-container" id="loginForm">
+    <p>
+      <label>Email-Id:</label>
+      <input class="w3-input" type="text" id="customerId" required>
+    </p>
+    <p>
+      <label>Password:</label>
+      <input class="w3-input" type="password" id="password" required>
+    </p>
+    <div class="button-container">
+      <button type="submit" class="button" onclick=login()>Login</button>
+      <button type="reset" class="button">Reset</button>
+    </div>
+  </form>
+</div>
+<div class="site-footer">
+  <div class="widget-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="widget">
+            <h3 class="widget-title">Contact</h3>
+            <address>
+              <p>SDM Insurance COMPANY,UJIRE</p>
+            </address>
+            <a href="#">Phone: +91-9482058979</a>
+            <a href="mailto:info@company.com">ranjanshetty360.com</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="widget">
+            <h3 class="widget-title">Company</h3>
+            <ul class="no-bullet">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Infoline</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Join us</a></li>
+              <li><a href="#">Cooperation</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="widget">
+            <h3 class="widget-title">Products</h3>
+            <ul class="no-bullet">
+              <li><a href="#">Life insurance</a></li>
+              <li><a href="#">Home insurance</a></li>
+              <li><a href="#">Car insurance</a></li>
+              <li><a href="#">Business insurance</a></li>
+              <li><a href="#">Investment insurance</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="widget">
+            <h3 class="widget-title">Our Solutions</h3>
+            <ul class="no-bullet">
+              <li><a href="#">Presentation</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Examples</a></li>
+              <li><a href="#">Our experts</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="widget">
+            <h3 class="widget-title">Press Room</h3>
+            <ul class="no-bullet">
+            <li><a href="#">Advertisement</a></li>
+            <li><a href="#">Interviews</a></li>
+            <li><a href="#">Hot news</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Marketing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="widget">
+            <h3 class="widget-title">Resources</h3>
+            <ul class="no-bullet">
+              <li><a href="resource.html">Financial Protection</a></li>
+              <li><a href="resource.html">Risk Mitigation</a></li>
+              <li><a href="resource.html">Legal Requirements</a></li>
+              <li><a href="resource.html">Peace of Mind</a></li>
+              <li><a href="resource.html">Asset Protection</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-footer">
+    <div class="container">
+      <nav class="footer-navigation">
+        <a href="index.html">Home</a>
+							<a href="about.html">About us</a>
+							<a href="insurance.html">Insurance plans</a>
+							<a href="resource.html">Resources</a>
+							<a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="colophon">Copyright 2024 SDM Insurance COMPANY. Designed by Ranjan Shetty. All rights reserved.</div>
+    </div>
+  </div>
+</div>
+<script>
+  var form = document.getElementById('loginForm');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission to a server
+
+    var customerId = document.getElementById('customerId').value;
+    var password = document.getElementById('password').value;
+
+    if (customerId.trim() !== '' && password.trim() !== '') {
+      // Perform login actions
+      alert('Login successful!');
+      // You can add your logic here to authenticate the user and proceed with the login
+    } else {
+      alert('Please fill in both fields.');
+    }
+  });
+
+function login() {
+  window.location.href = "InsurancechoosePolicy.html";
+}
+</script>
+
+</body>
+</html>
