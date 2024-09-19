@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+    margin: 15px 0;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #f4b400;
+}
+
+/* Section Styles */
+.main-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.section {
+    padding: 30px 0;
+    background-color: #e9ecef;
+}
+
+.cracker-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.cracker-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cracker-card h3 {
+    margin: 15px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,58 @@
+body {
+    /* Set a background color for the body */
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    /* Center the heading and add a color */
+    text-align: center;
+    color: #333;
+  }
+  
+  #cityInput {
+    /* Add some padding and a border to the input field */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #getWeatherBtn {
+    /* Style the button with a background color and text color */
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #getWeatherBtn:hover {
+    /* Add a hover effect to the button */
+    background-color: #3e8e41;
+  }
+  
+  #weatherDisplay {
+    /* Add some padding and a border to the weather display div */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  /* Center the elements using flexbox */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Add the container class to the body */
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  
+  body > * {
+    width: 80%; /* Set a maximum width for the elements */
+  }
